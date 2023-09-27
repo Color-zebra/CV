@@ -1,13 +1,37 @@
 body[data-theme="dark"] {
   --bg-grad-one: #2A2D32;
   --bg-grad-two: #131313;
+  --bg-secondary-color: #202122;
   --text-primary: #FFF;
-  --accent-color: #11A8FD;
+  --accent-color-bright: #11A8FD;
+  --accent-color-dim: #005696 ;
+  --theme-icon-link: url('../assets/moon.png');
 }
 
 body[data-theme="light"] {
   --bg-grad-one: #E9EAF0;
   --bg-grad-two: #E9EAF0;
+  --bg-secondary-color: rgba(189 200 223 / 70%);
   --text-primary: #4F4F4F;
-  --accent-color: #11A8FD;
+  --accent-color-bright: #005696;
+  --accent-color-dim: #11A8FD;
+  --theme-icon-link: url('../assets/sun.png');
+}
+
+@media (width > 1400px) {
+  :root {
+    --huge-text: 35px;
+  }
+}
+
+@media (width <= 1400px) {
+  :root {
+    --huge-text: 25px;
+  }
+}
+
+@media (width <= 997.7px) {
+  :root {
+    --huge-text: 22px;
+  }
 }

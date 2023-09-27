@@ -8,6 +8,16 @@ ul {
   list-style: none;
 }
 
+button {
+  border: none;
+  background-color: transparent;
+}
+
+a, a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
 body {
   background: linear-gradient(90deg, var(--bg-grad-one) 5.15%, var(--bg-grad-two) 89.49%);
   font-family: Inter, sans-serif;;
