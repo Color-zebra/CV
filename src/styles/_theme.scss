@@ -20,18 +20,21 @@ body[data-theme="light"] {
 
 @media (width > 1400px) {
   :root {
-    --huge-text: 35px;
+    --huge-text: 48px;
+    --big-text: 35px;
   }
 }
 
 @media (width <= 1400px) {
   :root {
-    --huge-text: 25px;
+    --huge-text: 42px;
+    --big-text: 25px;
   }
 }
 
 @media (width <= 997.7px) {
   :root {
-    --huge-text: 22px;
+    --huge-text: 32px;
+    --big-text: 18px;
   }
 }

@@ -29,7 +29,7 @@
   &__item {
     position: relative;
     color: var(--accent-color-bright);
-    font-size: var(--huge-text);
+    font-size: var(--big-text);
     font-weight: 700;
   }
 
@@ -55,5 +55,28 @@
 
   &__item:active::after {
     background-color: var(--accent-color-dim);
+  }
+}
+
+
+@media (width <= 1400px) {
+  .menu {
+    &__item {
+      position: relative;
+      color: var(--accent-color-bright);
+      font-size: var(--big-text);
+      font-weight: 600;
+    }
+  }
+}
+
+@media (width <= 997.7px) {
+  .photo {
+    padding: 1rem;
+
+    &__image {
+      width: 18rem;
+      height: 18rem;
+    }
   }
 }

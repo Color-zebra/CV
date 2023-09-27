@@ -18,12 +18,29 @@ a, a:visited {
   text-decoration: none;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
 body {
   background: linear-gradient(90deg, var(--bg-grad-one) 5.15%, var(--bg-grad-two) 89.49%);
-  font-family: Inter, sans-serif;;
+  color: var(--text-primary);
+  font-family: Inter, sans-serif;
 }
 
 .width-wrapper {
   max-width: 1400px;
   margin: 0 auto;
+}
+
+@media (width <= 1400px) {
+  .width-wrapper {
+    max-width: 990px;
+  }
+}
+
+@media (width <= 997.7px) {
+  .width-wrapper {
+    max-width: 700px;
+  }
 }
