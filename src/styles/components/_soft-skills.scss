@@ -3,12 +3,6 @@
     padding: 2rem 1rem;
   }
 
-  &__title {
-    margin: 0 0 2rem;
-    color: var(--accent-color-bright);
-    font-size: var(--huge-text);
-  }
-
   &__list {
     display: flex;
     flex-direction: column;

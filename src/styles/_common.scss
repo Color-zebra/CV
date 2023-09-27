@@ -33,6 +33,12 @@ body {
   margin: 0 auto;
 }
 
+.section-title {
+  margin: 0 0 2rem;
+  color: var(--accent-color-bright);
+  font-size: var(--huge-text);
+}
+
 @media (width <= 1400px) {
   .width-wrapper {
     max-width: 990px;
