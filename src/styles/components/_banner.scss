@@ -38,8 +38,8 @@
 
   &__wrapper {
     position: relative;
-    border: 0.5rem solid var(--accent-color-bright);
     border-radius: 50%;
+    outline: 0.45rem solid var(--accent-color-bright);
   }
 
   &__image {
@@ -54,14 +54,15 @@
 
   &__wrapper::after {
     position: absolute;
-    top: -4%;
-    left: -4%;
-    width: 108%;
-    height: 108%;
-    border: 0.5rem solid var(--accent-color-bright);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0.45rem solid var(--accent-color-bright);
     border-radius: 50%;
     border-right-color: transparent;
     border-left-color: transparent;
+    margin: -0.45rem;
     animation: rotation 8s linear infinite;
     content: '';
   }
@@ -69,29 +70,47 @@
 
 @keyframes rotation {
   0% {
-    transform: translate(-0.5rem, -0.5rem) rotate(0deg);
+    transform: scale(1.05) rotate(0deg);
   }
 
   25% {
-    transform: translate(-0.5rem, -0.5rem) rotate(90deg);
+    transform: scale(1.05) rotate(90deg);
   }
 
   50% {
-    transform: translate(-0.5rem, -0.5rem) rotate(180deg);
+    transform: scale(1.05) rotate(180deg);
   }
 
   75% {
-    transform: translate(-0.5rem, -0.5rem) rotate((270deg));
+    transform: scale(1.05) rotate((270deg));
   }
 
   100% {
-    transform: translate(-0.5rem, -0.5rem) rotate(360deg);
+    transform: scale(1.05) rotate(360deg);
   }
 }
 
 @media (width <= 1400px) {
+  .banner {
+    &__wrapper {
+      min-height: 30rem;
+      padding: 7rem 1rem;
+    }
+  }
+
   .photo {
     padding: 1rem;
+
+    &__wrapper {
+      outline: 0.35rem solid var(--accent-color-bright);
+    }
+
+    &__wrapper::after {
+      border: 0.35rem solid var(--accent-color-bright);
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: -0.35rem;
+    }
 
     &__image {
       width: 20rem;
@@ -101,12 +120,30 @@
 }
 
 @media (width <= 997.7px) {
+  .banner {
+    &__wrapper {
+      min-height: 25rem;
+      padding: 4rem 1rem;
+    }
+  }
+
   .photo {
     padding: 1rem;
 
+    &__wrapper {
+      outline: 0.25rem solid var(--accent-color-bright);
+    }
+
+    &__wrapper::after {
+      border: 0.25rem solid var(--accent-color-bright);
+      border-right-color: transparent;
+      border-left-color: transparent;
+      margin: -0.25rem;
+    }
+
     &__image {
-      width: 18rem;
-      height: 18rem;
+      width: 17rem;
+      height: 17rem;
     }
   }
 }
