@@ -1,7 +1,6 @@
 .about {
-  &__paragraph {
-    font-size: var(--medium-text);
-    text-indent: 2rem;
+  &__title {
+    margin: 2rem 1rem;
   }
 
   &__text {
@@ -12,7 +11,9 @@
     background: rgba(255 255 255 / 15%);
     background-blend-mode: overlay;
   }
-}
 
-.about-wrapper {
+  &__paragraph {
+    font-size: var(--medium-text);
+    text-indent: 2rem;
+  }
 }
